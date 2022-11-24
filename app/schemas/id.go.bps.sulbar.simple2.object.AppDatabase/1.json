@@ -1,0 +1,326 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "60d137d097474b4977e8ebb77b1f1110",
+    "entities": [
+      {
+        "tableName": "User",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `nama` TEXT NOT NULL, `username` TEXT NOT NULL, `prov_id` INTEGER NOT NULL, `kab_id` INTEGER NOT NULL, `kantor_unit_id` INTEGER NOT NULL, `pelabuhan_id` INTEGER NOT NULL, `leveluser_id` INTEGER NOT NULL, `token` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama",
+            "columnName": "nama",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "username",
+            "columnName": "username",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "prov_id",
+            "columnName": "prov_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab_id",
+            "columnName": "kab_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kantor_unit_id",
+            "columnName": "kantor_unit_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pelabuhan_id",
+            "columnName": "pelabuhan_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "leveluser_id",
+            "columnName": "leveluser_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "token",
+            "columnName": "token",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Prov",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `provinsi` TEXT, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "provinsi",
+            "columnName": "provinsi",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Kab",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`prov_id` INTEGER NOT NULL, `prov` TEXT NOT NULL, `kab_id` INTEGER NOT NULL, `kab` TEXT NOT NULL, PRIMARY KEY(`prov_id`))",
+        "fields": [
+          {
+            "fieldPath": "prov_id",
+            "columnName": "prov_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "prov",
+            "columnName": "prov",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab_id",
+            "columnName": "kab_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab",
+            "columnName": "kab",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "prov_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Kantor_Unit",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`prov_id` INTEGER NOT NULL, `prov` TEXT NOT NULL, `kab_id` INTEGER NOT NULL, `kab` TEXT NOT NULL, `kantor_unit_id` INTEGER NOT NULL, `kantor_unit` TEXT NOT NULL, PRIMARY KEY(`kantor_unit_id`))",
+        "fields": [
+          {
+            "fieldPath": "prov_id",
+            "columnName": "prov_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "prov",
+            "columnName": "prov",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab_id",
+            "columnName": "kab_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab",
+            "columnName": "kab",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kantor_unit_id",
+            "columnName": "kantor_unit_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kantor_unit",
+            "columnName": "kantor_unit",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "kantor_unit_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Pelabuhan",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`prov_id` INTEGER NOT NULL, `prov` TEXT NOT NULL, `kab_id` INTEGER NOT NULL, `kab` TEXT NOT NULL, `kantor_unit_id` INTEGER NOT NULL, `kantor_unit` TEXT NOT NULL, `pelabuhan_id` INTEGER NOT NULL, `pelabuhan` TEXT NOT NULL, PRIMARY KEY(`pelabuhan_id`))",
+        "fields": [
+          {
+            "fieldPath": "prov_id",
+            "columnName": "prov_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "prov",
+            "columnName": "prov",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab_id",
+            "columnName": "kab_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kab",
+            "columnName": "kab",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kantor_unit_id",
+            "columnName": "kantor_unit_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kantor_unit",
+            "columnName": "kantor_unit",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pelabuhan_id",
+            "columnName": "pelabuhan_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pelabuhan",
+            "columnName": "pelabuhan",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "pelabuhan_id"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "Laporan",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uuid` TEXT NOT NULL, `id` INTEGER NOT NULL, `nama_kapal_1` TEXT NOT NULL, `nama_kapal` TEXT NOT NULL, `nama_agen_kapal` TEXT NOT NULL, `bendera` TEXT NOT NULL, `pemilik` TEXT NOT NULL, `berangkat_tgl` TEXT NOT NULL, `berangkat_jam` TEXT NOT NULL, PRIMARY KEY(`uuid`))",
+        "fields": [
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama_kapal_1",
+            "columnName": "nama_kapal_1",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama_kapal",
+            "columnName": "nama_kapal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nama_agen_kapal",
+            "columnName": "nama_agen_kapal",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bendera",
+            "columnName": "bendera",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pemilik",
+            "columnName": "pemilik",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "berangkat_tgl",
+            "columnName": "berangkat_tgl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "berangkat_jam",
+            "columnName": "berangkat_jam",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "uuid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '60d137d097474b4977e8ebb77b1f1110')"
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:layout_marginBottom="50dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/name_main_frag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Laporan"
+                android:gravity="center_vertical"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nunito_regular"
+                android:layout_marginRight="40dp"/>
+            <ImageButton
+                android:id="@+id/filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/ripple_filter"
+                android:src="@drawable/ic_baseline_filter_list_24"
+                android:layout_gravity="right"
+                android:layout_marginLeft="-40dp"
+                />
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <id.go.bps.sulbar.simple2.adapter.MultiSwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/holder_laporan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:id="@+id/nama_laporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporan\nSeptember 2020"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"/>
+
+            <TableLayout
+                android:id="@+id/tabla"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_header"
+                        android:text="Keterangan"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_header"
+                        android:text="Nilai"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Pelayaran (unit)"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Datang dan Berangkat"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/unit"
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/laporan_isi"
+                        android:text="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:paddingLeft="15dp"
+                        android:text="Penumpang (orang)"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Berangkat"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/penumpang_berangkat"
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Datang"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/penumpang_datang"
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_span="2"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Barang/Bagasi (ton)"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Bongkar"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/ton_bongkar"
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_column="1"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="Muat"
+                        android:paddingLeft="30dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <TextView
+                        android:id="@+id/ton_muat"
+                        android:layout_column="2"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/laporan_isi"
+                        android:text="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"/>
+                </TableRow>
+
+
+
+            </TableLayout>
+        </LinearLayout>
+
+
+    </id.go.bps.sulbar.simple2.adapter.MultiSwipeRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

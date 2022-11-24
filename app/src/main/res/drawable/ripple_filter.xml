@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Background color when clicked -->
+    <item
+        android:drawable="@color/grey"
+        android:state_pressed="true">
+    </item>
+    <!-- Background color when not clicked -->
+    <item
+        android:drawable="@color/white"
+        android:state_pressed="false">
+    </item>
+</selector>

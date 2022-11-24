@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#4e73df</color>
+    <color name="primary_dark">#6610f2</color>
+    <color name="primary_light">#6f42c1</color>
+    <color name="accent">#FF4081</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="secondary">#BCA3AC</color>
+    <color name="facebook_color_dark">#5866BA</color>
+
+    <color name="colorPrimaryDisabled">#5866BA</color>
+    <color name="colorPrimaryDisabled2">#7885cb</color>
+    <color name="colorAccentDisabled">#F8CDD1</color>
+    <color name="background">#EEEEEF</color>
+    <color name="backgroundDark">#D0D0D1</color>
+    <color name="grey">#8B8B8C</color>
+    <color name="greyLightCariJadwal">#D9D9D9</color>
+    <color name="greyLightCariJadwal2">#F2F2F2</color>
+    <color name="greyDark">#7d7d7e</color>
+    <color name="black">#343434</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_light">#0FF704</color>
+    <color name="transparent">#00000000</color>
+    <color name="biru_lihat_guru_1">#55C8D3</color>
+    <color name="error_1">#FF5D5D</color>
+    <color name="status_red">#FF4949</color>
+    <color name="status_red_disabled">#FF8C8C</color>
+    <color name="status_green">#68BC78</color>
+    <color name="status_grey">#C9CACA</color>
+
+    <color name="icon_color_dark">#757475</color>
+
+    <color name="border_header">#7885cb</color>
+
+    <color name="warning">#FDD407</color>
+    <color name="warning_disabled">#FDF9C6</color>
+    <color name="signature_back">#E3E3E3</color>
+
+    <color name="avaibel">#c8e6c9</color>
+    <color name="avaibelDark">#a5d6a7</color>
+    <color name="error2">#ffab91</color>
+    <color name="error2Dark">#ff8a65</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="web_primary">#BCA3AC</color>
+    <color name="web_secondary">#858796</color>
+    <color name="web_success">#1cc88a</color>
+    <color name="web_info">#36b9cc</color>
+    <color name="web_warning">#f6c23e</color>
+    <color name="web_danger">#e74a3b</color>
+    <color name="web_light">#f8f9fc</color>
+    <color name="web_dark">#5a5c69</color>
+
+    <color name="laporan_bg_header">#F1F2EE</color>
+    <color name="laporan_stroke">#E3E6F0</color>
+    <color name="laporan_text">#858DA7</color>
+
+</resources>

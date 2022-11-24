@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/main_navigation_list_offline"
+        android:icon="@drawable/ic_baseline_addchart_24"
+        android:title="Entri" />
+
+    <item
+        android:id="@+id/main_navigation_list_online"
+        android:icon="@drawable/ic_baseline_list_24"
+        android:title="Data" />
+
+    <item
+        android:id="@+id/main_navigation_laporan"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Laporan" />
+
+</menu>

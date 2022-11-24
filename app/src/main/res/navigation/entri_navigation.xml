@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/blok_1">
+
+    <fragment
+        android:id="@+id/blok_1"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_1"
+        android:label="Informasi Entri"
+        tools:layout="@layout/blok_1" />
+
+    <fragment
+        android:id="@+id/blok_2"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_2"
+        android:label="Informasi Kapal"
+        tools:layout="@layout/blok_2" />
+
+    <fragment
+        android:id="@+id/blok_3_a"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_3_1"
+        android:label="PDN Bongkar Barang"
+        tools:layout="@layout/blok_3_1" />
+
+    <fragment
+        android:id="@+id/blok_3_b"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_3_2"
+        android:label="PDN Muat Barang"
+        tools:layout="@layout/blok_3_2" />
+    <fragment
+        android:id="@+id/blok_4_a"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_4_1"
+        android:label="PLN Bongkar Barang"
+        tools:layout="@layout/blok_4_1" />
+
+    <fragment
+        android:id="@+id/blok_4_b"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_4_2"
+        android:label="PLN Muat Barang"
+        tools:layout="@layout/blok_4_2" />
+
+    <fragment
+        android:id="@+id/blok_5"
+        android:name="id.go.bps.sulbar.simple2.ui.Entri.Blok_5"
+        android:label="Keterangan"
+        tools:layout="@layout/blok_5" />
+</navigation>

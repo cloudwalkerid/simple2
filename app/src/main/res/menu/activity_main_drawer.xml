@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/blok_1"
+            android:title="I. Informasi Entri" />
+        <item
+            android:id="@+id/blok_2"
+            android:title="II. Informasi Kapal" />
+        <item
+            android:id="@+id/blok_3_a"
+            android:title="III.a. PDN Bongkar Barang" />
+        <item
+            android:id="@+id/blok_3_b"
+            android:title="III.b. PDN Muat Barang" />
+        <item
+            android:id="@+id/blok_4_a"
+            android:title="IV.a. PLN Bongkar Barang" />
+        <item
+            android:id="@+id/blok_4_b"
+            android:title="IV.b. PLN Muat Barang" />
+        <item
+            android:id="@+id/blok_5"
+            android:title="V. Keterangan" />
+    </group>
+</menu>

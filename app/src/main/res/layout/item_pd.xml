@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginRight="7dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/bg_item_question">
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="70dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/barang_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="Sapi"
+            android:gravity="bottom"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="16 Ekor (2 Ton)"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/pd_hapus"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_delete_forever_24"
+        android:background="@color/web_danger"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

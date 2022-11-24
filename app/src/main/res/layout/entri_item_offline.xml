@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/entri_wilayah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mamuju, Sulawesi Barat"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/entri_pelabuhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pelabuahan Mamuju"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/entri_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KLM SATU DUA TIG jbkbkbk"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:textStyle="bold"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/entri_berangkat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Berangkat, 3 Desember 2020 19:50"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:paddingLeft="5dp"/>
+    <TextView
+        android:id="@+id/entri_last_edited"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terakhir edit, 3 Desember 2020 19:50 "
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:id="@+id/button_holder"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entri_edit"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Ubah"
+            android:background="@color/web_warning"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entri_hapus"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Hapus"
+            android:background="@color/web_danger"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/entri_kirim"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kirim"
+            android:background="@color/web_success"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
